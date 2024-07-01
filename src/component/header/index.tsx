@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between">
+    <header className="flex flex-row justify-between p-4 rounded-lg bg-cardBg">
       <div>Logo</div>
       <nav>
         <ul className="flex flex-row gap-4">
