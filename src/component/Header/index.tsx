@@ -8,6 +8,7 @@ const Header = () => {
         <ul className="flex flex-row gap-4">
           <Link href="/">Home</Link>
           <Link href="/post">Post</Link>
+          <Link href="/auth/login">Login</Link>
         </ul>
       </nav>
     </header>
