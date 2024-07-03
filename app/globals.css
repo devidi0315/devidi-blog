@@ -8,6 +8,16 @@
   --color-hint: #A6A6A6;
   --color-bg: #F2F2F2;
   --color-card-bg: #D9D9D9;
+
+  --font-size-base: 16px;
+  --font-size-base-rem: 1rem;
+  --font-size-h1: 2.375rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-h4: 1.5rem;
+  --font-size-body1: 1.25rem;
+  --font-size-body2: 1rem;
+  --font-size-caption: 0.875rem;
 }
 
 :root[data-theme='dark'] {

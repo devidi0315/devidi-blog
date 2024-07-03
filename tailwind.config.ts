@@ -1,8 +1,5 @@
 import type { Config } from "tailwindcss";
 
-function pxToRem(px: number) {
-  return px / 16
-}
 
 const config: Config = {
   content: [
@@ -20,13 +17,13 @@ const config: Config = {
       cardBg: 'var(--color-card-bg)',
     },
     fontSize: {
-      h1: `${pxToRem(38)}rem`,
-      h2: `${pxToRem(32)}rem`,
-      h3: `${pxToRem(28)}rem`,
-      h4: `${pxToRem(24)}rem`,
-      body1: `${pxToRem(20)}rem`,
-      body2: `${pxToRem(16)}rem`,
-      caption: `${pxToRem(12)}rem`,
+      h1: `var(--font-size-h1)`,
+      h2: `var(--font-size-h2)`,
+      h3: `var(--font-size-h3)`,
+      h4: `var(--font-size-h4)`,
+      body1: `var(--font-size-body1)`,
+      body2: `var(--font-size-body2)`,
+      caption: `var(--font-size-caption)`,
     },
   },
   plugins: [],
