@@ -4,7 +4,7 @@ import { MDXEditorMethods, MDXEditorProps } from '@mdxeditor/editor'
 import dynamic from 'next/dynamic'
 import React from 'react'
 import { forwardRef } from 'react'
-import './md.css'
+import './md.scss'
 
 // ForwardRefEditor.tsx
 

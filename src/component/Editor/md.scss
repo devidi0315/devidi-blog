@@ -1,0 +1,43 @@
+.mdxeditor {
+  padding: 10px;
+  overflow-x: scroll;
+
+  .mdxeditor-root-contenteditable,
+  .mdxeditor-root-contenteditable:focus,
+  .mdxeditor-root-contenteditable > div,
+  .mdxeditor-root-contenteditable > div:focus {
+    outline: none;
+  }
+
+  h1, 
+  h2, 
+  h3, 
+  h4, 
+  h5, 
+  h6 {
+    // margin-left: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+  }
+
+  h1 {
+    font-size: var(--font-size-h1);
+  }
+
+  h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  h3 {
+    font-size: var(--font-size-h3);
+  }
+
+  h4 {
+    font-size: var(--font-size-h4);
+  }
+
+  p {
+    font-size: var(--font-size-body1);
+  }
+}
