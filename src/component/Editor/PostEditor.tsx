@@ -1,23 +1,25 @@
 'use client'
 
-import { useRef } from "react";
+import { RefObject, useRef } from "react";
 import { ForwardRefEditor } from "./ForwardRefEditor"
 import { MDXEditorMethods } from "@mdxeditor/editor";
 
 interface PostEditorProps {
   markdown: string;
+  placeholder?: string;
+  editorRef?: RefObject<MDXEditorMethods>
 }
 
-const PostEditor = ({ markdown }: PostEditorProps) => { 
+const PostEditor = ({ markdown, placeholder, editorRef }: PostEditorProps) => { 
 
-
-  const ref = useRef<MDXEditorMethods>(null)
 
   return (
-    <div onClick={() => ref.current?.focus()} className="h-full overlfow-y-scroll">
-      <ForwardRefEditor markdown={markdown} ref={ref} />
+    <div onClick={() => editorRef?.current?.focus()} className="h-full overlfow-y-scroll">
+      <ForwardRefEditor markdown={markdown} ref={editorRef} placeholder={placeholder} />
     </div>
   )
 }
+
+
 
 export default PostEditor;

@@ -15,6 +15,8 @@ const config: Config = {
       hint: 'var(--color-hint)',
       bg: 'var(--color-bg)',
       cardBg: 'var(--color-card-bg)',
+      transparent: 'transparent',
+      success: 'var(--color-success)',
     },
     fontSize: {
       h1: `var(--font-size-h1)`,

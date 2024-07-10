@@ -1,4 +1,5 @@
 import PostItem from "@/src/component/Post/PostItem"
+import CategorySidebar from "@/src/component/Sidebar/CategorySidebar"
 import Link from "next/link"
 
 const PostItemList = [
@@ -68,8 +69,10 @@ export default function Page() {
 
 
   return (
-    <main>
-      <section></section>
+    <main className="flex flex-row gap-4 mt-4">
+      <section>
+        <CategorySidebar />
+      </section>
       <section className="flex flex-col gap-4">
         {PostItemList.map((item) => (
           <Link href={`/post/${item.slug}`} key={item.slug}>
